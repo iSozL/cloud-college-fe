@@ -1,0 +1,23 @@
+{
+  "name": "cloud-college-fe",
+  "version": "1.0.0",
+  "description": "云端学院前端",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iSozL/cloud-college-fe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iSozL/cloud-college-fe/issues"
+  },
+  "homepage": "https://github.com/iSozL/cloud-college-fe#readme",
+  "dependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
