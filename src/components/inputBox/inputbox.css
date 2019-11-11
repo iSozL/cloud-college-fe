@@ -1,0 +1,14 @@
+.input {
+  padding-left: 30px;
+  color: rgb(174, 204, 208);
+  font-size: 30px;
+  width: 330px;
+  height: 44px;
+  margin-top: 40px;
+  border-radius: 100px;
+  border-shadow: none;
+  border: 2px solid #76aac0;
+  outline: none;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075),
+    0px 0px 8px rgba(102, 175, 233, 0.8);
+}
