@@ -1,12 +1,13 @@
 .button {
-  color:#ffffff;
-  font-size:22px;
-  margin-bottom:20px;
-  width:95px;
-  padding:7px;
-  border:3px solid rgb(116 128 163);
-  background:rgb(73, 177, 227);
-  border-radius:100px;
+  color: #ffffff;
+  font-size: 35px;
+  margin-bottom: 20px;
+  width: 200px;
+  padding: 10px;
+  border: 3px solid rgb(116 128 163);
+  background: rgb(73, 177, 227);
+  border-radius: 100px;
   display: flex;
   justify-content: center;
+  letter-spacing: 10px;
 }
