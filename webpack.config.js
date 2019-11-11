@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+// const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   mode: "production",
   entry: "./src/App.jsx",
@@ -14,10 +14,11 @@ module.exports = {
         test: /\.css$/,
         use: [
           "style-loader",
-          { loader: "css-loader", options: { importLoaders: 1 } },
+          { loader: "css-loader" },
           {
             loader: "postcss-loader",
             options: {
+              ident: 'postcss',
               plugins: (loader) => [
                 require("postcss-aspect-ratio-mini")(),
                 require("postcss-px-to-viewport")({
@@ -49,6 +50,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ hash: true }),
-    new CleanWebpackPlugin({ template: "./dist" })
+    // new CleanWebpackPlugin({ template: "./dist" })
   ]
 };
