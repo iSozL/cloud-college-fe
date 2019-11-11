@@ -1,8 +1,6 @@
 import React from "react";
 import "../app.css";
-import TextBox from "../components/textBox/TextBox.jsx";
 import Button from "../components/button/Button.jsx";
-import InputBox from "../components/inputBox/InputBox.jsx";
 function Index() {
   return (
     <div className="index-container">

@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Index from './index/Index.jsx'
-// import './app.css'
+import Register from './register/Register.jsx'
 function App() {
   return(
     <div>
-      <Index />
+      <Register />
     </div>
   )
 }
