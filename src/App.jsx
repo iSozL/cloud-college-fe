@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Index from './index/Index.jsx'
+import Routes from './routes.jsx'
 import './app.css'
 
 function App() {
   return(
     <div style={{fontFamily: 'hanyi'}}>
-      <Index />
+      <Routes />
     </div>
   )
 }
