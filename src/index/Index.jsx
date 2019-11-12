@@ -1,5 +1,5 @@
 import React from "react";
-import "../app.css";
+import "./index.css";
 import Button from "../components/button/Button.jsx";
 function Index() {
   return (
