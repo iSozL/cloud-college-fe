@@ -16,15 +16,17 @@ function Index() {
       <Link to="/register" style={{ textDecoration: "none" }}>
         <Button name="注册" style={{ margin: "50px 0 0 0" }} />
       </Link>
-      <div
-        style={{
-          fontSize: "40px",
-          marginTop: "40px",
-          color: "rgb(95, 122, 184)"
-        }}
-      >
-        忘记密码?
-      </div>
+      <Link to="/forget" style={{ textDecoration: "none" }}>
+        <div
+          style={{
+            fontSize: "40px",
+            marginTop: "40px",
+            color: "rgb(95, 122, 184)"
+          }}
+        >
+          忘记密码?
+        </div>
+      </Link>
     </div>
   );
 }
