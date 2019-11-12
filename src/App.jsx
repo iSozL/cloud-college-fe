@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Register from './register/Register.jsx'
+import Index from './index/Index.jsx'
+import './app.css'
+
 function App() {
   return(
-    <div>
-      <Register />
+    <div style={{fontFamily: 'hanyi'}}>
+      <Index />
     </div>
   )
 }
