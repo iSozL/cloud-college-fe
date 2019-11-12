@@ -2,7 +2,6 @@ import React from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
 import Button from "../components/button/Button.jsx";
-import Register from "../register/Register.jsx";
 function Index() {
   return (
     <div className="index-container">
@@ -14,7 +13,7 @@ function Index() {
       <Link to="/login" style={{ textDecoration: "none" }}>
         <Button name="登录" style={{ margin: "200px 0 0 0" }} />
       </Link>
-      <Link to="" style={{ textDecoration: "none" }}>
+      <Link to="/register" style={{ textDecoration: "none" }}>
         <Button name="注册" style={{ margin: "50px 0 0 0" }} />
       </Link>
       <div
