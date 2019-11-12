@@ -1,6 +1,8 @@
 import React from "react";
 import "./index.css";
+import { Link } from "react-router-dom";
 import Button from "../components/button/Button.jsx";
+import Register from "../register/Register.jsx";
 function Index() {
   return (
     <div className="index-container">
@@ -8,8 +10,13 @@ function Index() {
         src="https://have-more-boiled-water.oss-cn-shanghai.aliyuncs.com/%E5%BC%80%E5%A7%8B.png"
         className="index-logo"
       />
-      <Button name="登录" style={{ margin: "200px 0 0 0" }} />
-      <Button name="注册" style={{ margin: "50px 0 0 0" }} />
+
+      <Link to="/login" style={{ textDecoration: "none" }}>
+        <Button name="登录" style={{ margin: "200px 0 0 0" }} />
+      </Link>
+      <Link to="" style={{ textDecoration: "none" }}>
+        <Button name="注册" style={{ margin: "50px 0 0 0" }} />
+      </Link>
       <div
         style={{
           fontSize: "40px",
