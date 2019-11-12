@@ -51,6 +51,10 @@ module.exports = {
         options: {
           cacheDirectory: true
         }
+      },
+      {
+        test: /\.ttf$./,
+        loader: "url-loader"
       }
     ]
   },
