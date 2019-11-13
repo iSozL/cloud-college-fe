@@ -4,8 +4,7 @@ import InputBox from "../components/inputBox/InputBox.jsx";
 import Button from "../components/button/Button.jsx";
 import TextBox from "../components/textBox/TextBox.jsx";
 import { Link } from "react-router-dom";
-import api from '../utils/apiUtils.jsx'
-import axios from "axios";
+import Api from '../utils/apiUtils.jsx'
 class Rigster extends React.Component {
   constructor(props) {
     super(props)
@@ -32,23 +31,16 @@ class Rigster extends React.Component {
       username: this.state.username,
       password: this.state.password
     }
-    console.log(user)
-    axios.defaults.headers.post['Content-Type'] = 'application/json';
-    axios.post('http://127.0.0.1:8888/login', user).then(
-      function(res){
-        console.log(res)
+    Api.fetchData('/login', 'post', user).then(
+      res => {
+        if(res.status == 200) {
+          console.log(res)
+        }
+      },
+      error => {
+        console.log(error)
       }
     )
-    // api.fetchData('post', '/login', user).then(
-    //   res => {
-    //     if(res.status == 200) {
-    //       console.log(res)
-    //     }
-    //   },
-    //   error => {
-    //     console.log(error)
-    //   }
-    // )
   }
   render() {
     return (

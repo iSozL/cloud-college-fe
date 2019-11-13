@@ -1,11 +1,10 @@
-  
 import axios from 'axios';
 export default {
   fetchData(url, methods, datas) {
     axios.defaults.headers.post['Content-Type'] = 'application/json';
     return new Promise((resolve, reject) => {
       axios({
-        url: '127.0.0.1:8888' + url,
+        url: 'http://127.0.0.1:8888' + url,
         method: methods,
         data: datas
       })
@@ -13,23 +12,7 @@ export default {
           resolve(res);
         })
         .catch(function(error) {
-          reject(error.response);
-        });
-    });
-  },
-  mainData(url, methods, datas) {
-    axios.defaults.headers.post['Content-Type'] = 'application/json';
-    return new Promise((resolve, reject) => {
-      axios({
-        url: url,
-        method: methods,
-        data: datas
-      })
-        .then(res => {
-          resolve(res);
-        })
-        .catch(error => {
-          reject(error)
+          reject(error);
         });
     });
   }
