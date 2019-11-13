@@ -22,4 +22,16 @@ body {
 }
 .msg-container {
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sex {
+  width: 400px;
+}
+.sex-detail {
+  padding: 10px 10px 10px 5px;
+  font-size: 40px;
+  color:#9ecbd1;
+  margin-top: 50px;
 }
