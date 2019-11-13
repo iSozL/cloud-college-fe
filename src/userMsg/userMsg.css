@@ -7,14 +7,19 @@ body {
   width: 100vw;
   height: 100vh;
 }
-.index-container {
+.user-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.index-logo {
-  margin-top: 30px;
-  width: 450px;
-  height: auto;
+.user-img {
+  width: 200px;
+  height: 200px;
+  border: 3px solid rgb(95, 122, 184);
+  border-radius: 50%;
+  margin-top: 40px
+}
+.msg-container {
+  width: 80%;
 }
