@@ -35,3 +35,13 @@ body {
   color:#9ecbd1;
   margin-top: 50px;
 }
+.sex-detail input {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.sex-detail div {
+  display: inline-block;
+  margin-right: 30px;
+  margin-left: 20px;
+}
