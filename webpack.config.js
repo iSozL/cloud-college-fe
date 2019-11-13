@@ -6,9 +6,9 @@ module.exports = {
   entry: "./src/App.jsx",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].[hash].js",
+    filename: "[name].[hash].js"
   },
-  devServer:{
+  devServer: {
     historyApiFallback: true
   },
   module: {
@@ -21,8 +21,8 @@ module.exports = {
           {
             loader: "postcss-loader",
             options: {
-              ident: 'postcss',
-              plugins: (loader) => [
+              ident: "postcss",
+              plugins: loader => [
                 require("postcss-aspect-ratio-mini")(),
                 require("postcss-px-to-viewport")({
                   viewportWidth: 750, // (Number) The width of the viewport.
@@ -46,6 +46,20 @@ module.exports = {
         ]
       },
       {
+        test: /\.less$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader"
+          },
+          {
+            loader: "less-loader"
+          }
+        ]
+      },
+      {
         test: /\.jsx?$/,
         loader: "babel-loader",
         options: {
@@ -54,14 +68,16 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [{
-          loader: "url-loader"
-        }]
+        use: [
+          {
+            loader: "url-loader"
+          }
+        ]
       }
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({ hash: true }),
+    new HtmlWebpackPlugin({ hash: true })
     // new CleanWebpackPlugin({ template: "./dist" })
   ]
 };

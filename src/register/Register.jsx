@@ -5,6 +5,8 @@ import Button from "../components/button/Button.jsx";
 import TextBox from "../components/textBox/TextBox.jsx";
 import { Link } from "react-router-dom";
 import Api from '../utils/apiUtils.jsx'
+import 'antd/lib/message/style/index.css';
+import message from 'antd/lib/message/index.js';
 class Rigster extends React.Component {
   constructor(props) {
     super(props)
@@ -34,7 +36,11 @@ class Rigster extends React.Component {
     Api.fetchData('/login', 'post', user).then(
       res => {
         if(res.status == 200) {
-          console.log(res)
+          if(res.data.status == 1) {
+            message.success(res.data.message)
+          } else {
+            message.error(res.data.message)
+          }         
         }
       },
       error => {
