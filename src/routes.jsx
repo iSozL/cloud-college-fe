@@ -6,6 +6,7 @@ const Register = React.lazy(() => import("./login/Login.jsx"));
 const Forget = React.lazy(() => import("./forget/Forget.jsx"));
 const UserMsg = React.lazy(() => import("./userMsg/UserMsg.jsx"))
 const IsCreate = React.lazy(() => import("./isCreate/IsCreate.jsx"))
+const Create = React.lazy(() => import("./create/Create.jsx"))
 import Loading from "./components/loading/Loading.jsx";
 class Routes extends React.Component {
   render() {
@@ -19,6 +20,7 @@ class Routes extends React.Component {
             <Route path="/forget" component={Forget} />
             <Route path="/usermsg" component={UserMsg} />
             <Route path="/iscreate" component={IsCreate} />
+            <Route path="/create" component={Create} />
           </Switch>
         </BrowserRouter>
       </React.Suspense>
