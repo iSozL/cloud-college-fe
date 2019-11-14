@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://have-more-boiled-water.oss-cn-shanghai.aliyuncs.com/createbg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+}
+.iscreate-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search {
+  margin-top: 150px;
+  width: 80%;
+}
+.user {
+  margin-top: 50px;
+  margin-bottom: 400px;
+  width: 80%;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
