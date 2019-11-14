@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://have-more-boiled-water.oss-cn-shanghai.aliyuncs.com/createbg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+}
+.create-room-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.back {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+.text-box-container {
+  width: 80%;
+}
+.title {
+  font-size: 50px;
+  color: rgb(95, 122, 184);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.room-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hummer {
+  width: 250px;
+  height: auto;
+  margin: 50px 0 20px 0;
+}
+.type {
+  width: 400px;
+}
+.detail {
+  padding: 10px 10px 10px 5px;
+  font-size: 40px;
+  color:#9ecbd1;
+  margin-top: 50px;
+}
+.type-container {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.detail input {
+  width: 30px;
+  height: 30px;
+}
