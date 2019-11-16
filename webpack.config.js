@@ -9,7 +9,8 @@ module.exports = {
     filename: "[name].[hash].js"
   },
   devServer: {
-    historyApiFallback: true
+    historyApiFallback: true,
+    hot: true
   },
   module: {
     rules: [
@@ -77,7 +78,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({ hash: true })
+    new HtmlWebpackPlugin({
+        multihtmlCache:true// 解决多页打包的关键
+    })
     // new CleanWebpackPlugin({ template: "./dist" })
   ]
 };
