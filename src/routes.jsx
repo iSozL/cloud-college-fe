@@ -8,7 +8,7 @@ const UserMsg = React.lazy(() => import("./userMsg/UserMsg.jsx"))
 const IsCreate = React.lazy(() => import("./isCreate/IsCreate.jsx"))
 const Create = React.lazy(() => import("./create/Create.jsx"))
 const CreateRoom = React.lazy(() => import("./createRoom/CreateRoom.jsx"))
-const Search = React.lazy(() => import("./components/search/Search.jsx"))
+const Search = React.lazy(() => import("./search/Search.jsx"))
 import Loading from "./components/loading/Loading.jsx";
 class Routes extends React.Component {
   render() {
