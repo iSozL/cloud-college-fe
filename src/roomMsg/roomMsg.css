@@ -4,10 +4,31 @@
   align-items: center;
 }
 .users-back {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: flex-end
 }
 .users-textbox-container {
+  width: 90%;
+}
+.room-title {
+  font-size: 50px;
+  color: rgb(118,130,163);
+  align-self: flex-start;
+  letter-spacing: .5vw;
+  margin: 20px 0 20px 0;
+}
+.room-msg-container {
   width: 80%;
+  color: rgb(177,199,199);
+  font-size: 40px;
+}
+.room-body div{
+  margin: 20px 0 20px 0;
+}
+.room-button {
+  margin: 70px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
