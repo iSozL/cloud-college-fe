@@ -1,0 +1,13 @@
+.users-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.users-back {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end
+}
+.users-textbox-container {
+  width: 80%;
+}
