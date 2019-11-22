@@ -7,3 +7,27 @@ body {
   width: 100vw;
   height: 100vh;
 }
+.room-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.room-back {
+  align-self: flex-end;
+  margin-right: 40px;
+}
+.room-sider {
+  align-self: flex-end;
+  margin-right: 40px;
+}
+.room-input {
+  align-self: center;
+  width: 80%;
+  height: 60px;
+  padding-bottom: 90px;
+  display: flex;
+}
+.room-button {
+  margin-top: 40px
+}

@@ -29,7 +29,7 @@ class Routes extends React.Component {
             <Route path="/createroom" component={CreateRoom} />
             <Route path="/search" component={Search} />
             <Route path="/roommsg" component={RoomMsg} />
-            <Route path="/room" component={Room}>
+            <Route path="/room" component={Room} />
           </Switch>
         </BrowserRouter>
       </React.Suspense>

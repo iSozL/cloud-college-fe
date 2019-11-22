@@ -9,7 +9,9 @@ class InputBox extends React.Component {
         type={this.props.type}
         onChange={this.props.onChange}
         style={this.props.style}
-      ></input>
+      >
+        {this.props.children}
+      </input>
     );
   }
 }
