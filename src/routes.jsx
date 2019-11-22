@@ -10,6 +10,7 @@ const Create = React.lazy(() => import("./create/Create.jsx"))
 const CreateRoom = React.lazy(() => import("./createRoom/CreateRoom.jsx"))
 const Search = React.lazy(() => import("./search/Search.jsx"))
 const RoomMsg = React.lazy(() => import("./roomMsg/RoomMsg.jsx"))
+const Room = React.lazy(() => import("./room/Room.jsx"))
 import Loading from "./components/loading/Loading.jsx";
 class Routes extends React.Component {
   render() {
@@ -28,6 +29,7 @@ class Routes extends React.Component {
             <Route path="/createroom" component={CreateRoom} />
             <Route path="/search" component={Search} />
             <Route path="/roommsg" component={RoomMsg} />
+            <Route path="/room" component={Room}>
           </Switch>
         </BrowserRouter>
       </React.Suspense>
